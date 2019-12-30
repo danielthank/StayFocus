@@ -116,6 +116,7 @@ func blockAll(client *http.Client) error {
 }
 
 func main() {
+	// The path should be absolute path
 	f, err := os.Open("config.yml")
 	if err != nil {
 		log.Fatalln("Cannot open config.yml")

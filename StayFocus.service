@@ -4,7 +4,8 @@ After=network-online.target
 
 [Service]
 Type=notify
-ExecStart=/home/danielthank/go/bin/StayFocus
+# The path should be absolute path
+ExecStart=/home/${USER_NAME}/go/bin/StayFocus
 
 [Install]
 WantedBy=multi-user.target
