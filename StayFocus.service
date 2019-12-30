@@ -1,0 +1,10 @@
+[Unit]
+Description=Stay Focus
+After=network-online.target
+
+[Service]
+Type=notify
+ExecStart=/home/danielthank/go/bin/StayFocus
+
+[Install]
+WantedBy=multi-user.target
